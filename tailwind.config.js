@@ -18,6 +18,7 @@ module.exports = {
       mediumGrey: "hsl(216, 12%, 54%)",
       darkBlue: "hsl(213, 19%, 18%)",
       darkBlueLight: "hsla(213, 19%, 18%, 0.6)",
+      cardBg: "hsl(213, 20%, 18%)",
       veryDarkBlue: "hsl(216, 12%, 8%)",
       orange: "hsl(25, 97%, 53%)"
     },
