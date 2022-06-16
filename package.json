@@ -1,0 +1,13 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i src/input.css -o public/style.css --watch",
+    "minify": "npx tailwindcss -i src/input.css -o public/style.css --minify"
+  },
+  "keywords": [],
+  "author": "Headbwoi",
+  "license": "ISC"
+}

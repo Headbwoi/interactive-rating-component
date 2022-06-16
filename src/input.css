@@ -1,0 +1,10 @@
+/* Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+ Weights: 400, 700 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
