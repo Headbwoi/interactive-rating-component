@@ -717,65 +717,59 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(216, 12%, 54%);
 }
 
-/* 
 @-webkit-keyframes flip {
   0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    transform: rotateX(0);
   }
+
   100% {
-    -webkit-transform: rotateX(720deg);
-            transform: rotateX(720deg);
+    transform: rotateX(720deg);
   }
 }
 
 @keyframes flip {
   0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    transform: rotateX(0);
   }
+
   100% {
-    -webkit-transform: rotateX(720deg);
-            transform: rotateX(720deg);
+    transform: rotateX(720deg);
   }
 }
 
 @-webkit-keyframes fade-bottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes fade-bottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 .flip-animation {
   -webkit-animation: flip 1.8s 1 ease-in-out;
-          animation: flip 1.8s 1 ease-in-out;
+  animation: flip 1.8s 1 ease-in-out;
 }
 
 .fade-bottom {
   -webkit-animation: fade-bottom 1s 1 ease-in-out;
-          animation: fade-bottom 1s 1 ease-in-out;
+  animation: fade-bottom 1s 1 ease-in-out;
 }
- */
 
 .attribution {
   font-size: 11px;
