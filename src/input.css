@@ -8,9 +8,9 @@
 .card{
     background: linear-gradient(to bottom, #1e252f 5%, rgba(29, 36, 44, 0.479));
 }
-.active{
-    background-color: hsl(216, 12%, 54%);
-    color: hsl(0, 0%, 100%);
+input[type=radio]:checked + label {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
 }
 
 
