@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
   <link rel="stylesheet" href="public/style.css">
+  <script src="public/index.js" defer></script>
 
 </head>
 <body class="font-overpass bg-veryDarkBlue flex justify-center items-center min-h-screen">
@@ -19,7 +20,7 @@
 
         <!-- Rating state start -->
 
-      <div class="state-card card rounded-xl lg:rounded-3xl w-[20.3125rem] h-[22.5rem] lg:w-[26.25rem] lg:h-[26.375rem] pt-5 lg:pt-7 pb-7 px-5 lg:pl-7 lg:pr-11">
+      <div class="state-card card card-1 rounded-xl lg:rounded-3xl w-[20.3125rem] h-[23.5rem] lg:w-[26.25rem] lg:h-[26.375rem] pt-5 lg:pt-7 pb-7 px-5 lg:pl-7 lg:pr-11">
 
         <div class="star w-12 h-12 p-2 rounded-full bg-darkBlue shadow-2xl shadow-veryDarkBlue grid place-items-center mb-4 lg:mb-8">
           <img src="images/icon-star.svg" alt="icon-star">
@@ -32,28 +33,18 @@
         </div>
 
         <div class="input">
-          <form>
+          <form id="form">
             <div class="flex justify-between items-center mb-7">
-              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200">
-                <p class="font-bold rating">1</p>
-              </div>
-              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200">
-                <p class="font-bold rating">2</p>
-              </div>
-              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200">
-                <p class="font-bold rating">3</p>
-              </div>
-              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200">
-                <p class="font-bold rating">4</p>
-              </div>
-              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200">
-                <p class="font-bold rating">5</p>
-              </div>
+              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200 font-bold rating">1</div>
+              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200 font-bold rating">2</div>
+              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200 font-bold rating">3</div>
+              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200 font-bold rating">4</div>
+              <div class="w-[2.9rem] h-[2.9rem] lg:w-[3.2rem] lg:h-[3.2rem] rounded-full bg-cardBg text-lightGrey cursor-pointer flex items-center justify-center hover:bg-orange hover:text-white duration-200 font-bold rating">5</div>
               
             </div>
 
             <div class="submit">
-              <button type="submit" class="w-full rounded-full uppercase p-3 text-center bg-orange text-white tracking-widest hover:text-orange hover:bg-white duration-200">Submit</button>
+              <button type="submit" class="w-full rounded-full uppercase p-2 lg:p-3 text-center bg-orange text-white tracking-widest hover:text-orange hover:bg-white duration-200" id="submit-btn">Submit</button>
             </div>
           </form>
         </div>
@@ -64,7 +55,7 @@
   
         <!-- Thank you state start -->
 
-      <div class="thank_you_card card bg-darkBlue rounded-lg w-[20.3125rem] h-[22.5rem] lg:w-[26.25rem] lg:h-[26.375rem] pt-6 lg:pt-[2.375rem] pb-11 px-5 lg:px-7 flip-animation hidden">
+      <div class="thank_you_card card bg-darkBlue rounded-lg w-[20.3125rem] h-[23.5rem] lg:w-[26.25rem] lg:h-[26.375rem] pt-6 lg:pt-[2.375rem] pb-11 px-5 lg:px-7 hidden">
 
         <div class="text-center">
           <div class="mb-6">
@@ -72,13 +63,13 @@
           </div>
 
           <div class="mb-6 lg:mb-9">
-            <p class="text-orange  bg-cardBg py-1 px-5 w-fit rounded-full mx-auto">You selected <span id="rating">4</span> out of 5</p>
+            <p class="text-orange  bg-cardBg py-1 px-5 w-fit rounded-full mx-auto">You selected <span id="rating-number"></span> out of 5</p>
           </div>
 
           <div class="text px-5 fade-bottom">
             <h2 class="text-white text-3xl font-bold mb-5">Thank You!</h2>
             <p class="text-lightGrey font-normal">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-          </div>>
+          </div>
         </div>
         
       </div>

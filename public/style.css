@@ -715,6 +715,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .active{
   background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
 }
 
 @-webkit-keyframes flip {
