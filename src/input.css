@@ -14,29 +14,6 @@ input[type=radio]:checked + label {
 }
 
 
-@-webkit-keyframes flip {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-            
-  }
-  100% {
-    -webkit-transform: rotateX(720deg);
-            transform: rotateX(720deg);
-  }
-}
-
-@keyframes flip {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(720deg);
-            transform: rotateX(720deg);
-  }
-}
-
 @-webkit-keyframes fade-bottom {
   0% {
     opacity: 0;
@@ -63,10 +40,6 @@ input[type=radio]:checked + label {
   }
 }
 
-.flip-animation {
-  -webkit-animation: flip 1.8s 1 ease-in-out;
-          animation: flip 1.8s 1 ease-in-out;
-}
 
 .fade-bottom {
   -webkit-animation: fade-bottom 1s 1 ease-in-out;
